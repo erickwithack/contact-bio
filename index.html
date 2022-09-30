@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bio and Contacts</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+      }
+
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+      }
+
+      body {
+        margin: 25px 300px;
+        font-size: 20px;
+      }
+
+      .logo.img {
+        width: 700px;
+        height: 400px;
+      }
+
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+      }
+
+      h3 {
+        color: rgb(148, 45, 45);
+        font-size: 30px;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+      }
+      button {
+        all: unset;
+      }
+
+      h3:hover {
+        color: blue;
+      }
+
+      nav.nav-bar {
+        text-align: right;
+        height: 70px;
+      }
+
+      .night-mode {
+        color: white;
+        background-color: rgb(34, 33, 33);
+      }
+
+      div.contact span {
+        margin-right: 15px;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <button onclick="changeIcon()">
+        <span class="material-symbols-outlined"> dark_mode </span>
+      </button>
+    </nav>
+    <div class="logo">
+      <h3 class="education">Education</h3>
+      <img src="./logo.jpeg" alt="logo" />
+      <p>Bachelor of science: Computer Science @Northwestern</p>
+    </div>
+
+    <div class="bio">
+      <h3 class="title">Bio</h3>
+      <p>
+        I'm a Software Developer with 2 years of experience in design and
+        frontend. <br />I have experiecne with freelancing, as showcased in the
+        portfolio page.
+      </p>
+    </div>
+
+    <div class="contact">
+      <h3>Contacts</h3>
+      <p>
+        <span class="material-symbols-outlined"> mail </span>
+        lemaerick6@gmail.com
+      </p>
+      <p>
+        <span class="material-symbols-outlined"> phone_iphone </span
+        >773-541-0627
+      </p>
+    </div>
+
+    <script>
+      var Navbar = document.querySelector(".nav-bar");
+      function changeIcon() {
+        document.body.classList.toggle("night-mode");
+      }
+    </script>
+  </body>
+</html>
